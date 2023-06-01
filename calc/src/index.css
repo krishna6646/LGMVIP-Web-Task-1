@@ -1,0 +1,67 @@
+:root{
+  --primary: #d81e5b;
+  --secondary: #8c34ff;
+  --dark: #131313;
+  --light: rgb(236, 202, 169);
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+  background-color: var(--light);
+}
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.calcu{
+  width: 100%;
+  max-width: 400px;
+  background-color: rgb(245, 241, 236);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0,0,0,0.2);
+}
+.display{
+  padding: 16px;
+  background-color: var(--dark);
+  text-align: right;
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 300;
+}
+button{
+  appearance: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover{
+  opacity: 0.8;
+}
+.operations{
+  display: flex;
+}
+.operations button{
+  flex: 1 1 0%;
+  background-color:#8c34ff;
+  font-weight: 700;
+}
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button{
+  flex:1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
